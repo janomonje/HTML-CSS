@@ -1,0 +1,127 @@
+* {
+  font-family: sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  border: 4px solid;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+
+#product-title {
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgba(226, 226, 226, 0.952);
+  padding: 15px;
+}
+
+.shoes-pic {
+  margin-bottom: 10px;
+}
+
+#price {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+#shipping {
+  font-size: 13px;
+  color: darkgray;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.quick-info {
+  margin-bottom: 25px;
+}
+
+.more-info:hover {
+  text-decoration: none;
+}
+
+.colors p {
+  padding: 5px 5px;
+  width: 15px;
+  height: 15px;
+
+  display: inline-block;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.colors p:last-child {
+  margin-right: 0;
+}
+
+#black {
+  background-color: black;
+}
+#light-blue {
+  background-color: skyblue;
+}
+#red {
+  background-color: #db4040;
+}
+#yellow {
+  background-color: rgba(240, 240, 40, 0.911);
+}
+#light-green {
+  background-color: lightgreen;
+}
+#light-brown {
+  background-color: rgb(138, 84, 77);
+}
+
+.product-details {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.sale {
+  color: azure;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  background-color: #fd2a2a;
+  padding: 10px 20px;
+  display: inline-block; /*with this property the element only uses the spece it needs*/
+
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 15px;
+  border-left: none;
+}
+
+button:hover {
+  width: 100%;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  border-top: 4px solid black;
+}
