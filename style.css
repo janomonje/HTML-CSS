@@ -177,7 +177,6 @@ nav a:link {
   
   display: block;*/
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -241,15 +240,16 @@ footer p {
   color: green;
 }
 */
-/*FLOATS*/
 
+/*FLOATS*/
+/*
 .author-image {
   float: left;
   margin-bottom: 20px;
 }
 
 .author {
-  /*padding-left: 10px;*/
+  /*padding-left: 10px;
   margin-top: 10px;
   float: left;
   margin-left: 20px;
@@ -282,9 +282,50 @@ aside {
   float: right;
 }
 
-/*FLOATING**/
+/*FLOATING**
 
 
 footer {
   clear: both;
+}
+*/
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*The free space will be in the middle of the two elements
+   (the title and the links )*/
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
