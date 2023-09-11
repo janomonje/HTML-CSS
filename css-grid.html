@@ -36,23 +36,63 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 32px;
         margin: 40px;
 
         /* CSS GRID */
+
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr auto /*auto only takes the size that is necessary to fill content*/
+        /* grid-template-rows: 300px 200px; */
+
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        /* height: 500px; */
+
+        column-gap: 20px;
+        row-gap: 40px;
+        /*TEMPORARY*/
+        display: none;
       }
 
+      .el--8 {
+        /*Position element in a specific location*/
+        grid-column: 2 / 3; /*start in column 2 and finishes in column 3*/
+        grid-row: 1 / 2;
+      }
+
+      .el--2 {
+        grid-column: 1 / -1; /*-1 spans it all the way to the end of the grid*/
+        grid-row: 2 / 3;
+      }
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
-        margin: 100px;
+        margin: 40px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /*ALIGNING TRACKS INSIDE CONTAINER:
+        distribute empty space*/
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+
+        /*ALIGNING THE ITEMS INSIDE cells:display: display: display: display: 
+        moving items inside cells*/
+        align-items: center;
+        justify-items: center;
+
       }
     </style>
   </head>
